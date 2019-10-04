@@ -3,8 +3,10 @@ import ReactDOM from "react-dom";
 import ApolloClient, { createNetworkInterface } from "apollo-client";
 import { ApolloProvider } from "react-apollo";
 import { Router, hashHistory, Route, IndexRoute } from "react-router";
+
 import App from "./components/App";
 import LoginForm from "./components/LoginForm";
+import "./index.css";
 
 const networkInterface = createNetworkInterface({
   uri: "/graphql",
